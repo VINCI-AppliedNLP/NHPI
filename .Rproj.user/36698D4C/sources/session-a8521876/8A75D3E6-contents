@@ -1,0 +1,15 @@
+################### Package Set-Up  ###########################
+#
+#  R-environ
+#. 
+#
+###################################################################
+
+# 
+install.packages("gptstudio")
+install.packages("openai")
+
+#openai key
+apikey<-"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"
+
+Sys.setenv(OPENAI_API_KEY = apikey)

@@ -1,0 +1,9 @@
+
+# generate Github Personal Access Token
+library(usethis)
+create_github_token(scopes = c("(no scope)"), description = "R:GITHUB_PAT", host = "https://github.com")
+
+
+#PAT created from github site with no scopes checked = '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'
+
+#PAT created 10/8/24 expires in 1 year - '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'

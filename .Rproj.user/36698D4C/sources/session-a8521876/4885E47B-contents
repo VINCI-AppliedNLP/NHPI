@@ -1,0 +1,59 @@
+
+####OMOP CDM Connection
+install.packages("CDMConnector")
+library(CDMConnector)
+con<-DBI::dbConnect(duckdb::duckdb(), eunomia_dir("synthea-covid19-200k"))
+cdm<-cdm_from_con(con, "main", "main")
+
+#query first 10 rows
+cdm$person
+
+con2 <- DBI::dbConnect(RPostgres::Postgres(), 
+                       dbname = "u0807390", 
+                       host = "localhost", 
+                       user = "postgres", 
+                       password = "")
+
+#load CDM into postgres database
+#limit to just the default tables
+cdm<- cdm_from_con(con, "main", "main") %>%
+  cdm_select_tbl(tbl_group("default"))
+#load to postgres
+copy_cdm_to(con2, cdm, schema = "OMOP_Covid_200k")
+
+DBI::dbDisconnect(con)
+
+###view other example cdms of synthetic data
+CDMConnector::exampleDatasets()
+
+##Use connection to query postgres cdm
+DBI::dbGetQuery(con, "SELECT COUNT(*) FROM Concept")
+DBI::dbGetQuery(con, "SELECT * FROM Concept LIMIT 10")
+
+###Run data quality dashboard on duckdb
+library(DatabaseConnector)
+connectionDetails <- createConnectionDetails(
+  "duckdb",
+  server = eunomia_dir("synthea-covid19-10k")
+  )
+
+
+con<- connect(connectionDetails)
+
+disconnect()
+
+# install.packages("remotes")
+# remotes::install_github("OHDSI/DataQualityDashboard")
+
+DataQualityDashboard::executeDqChecks(
+  connectionDetails = connectionDetails,
+  cdmDatabaseSchema = "main",
+  resultsDatabaseSchema = "main",
+  cdmSourceName = "synthea",
+  outputFolder = here::here("dqd_output"),
+  checkLevels = "TABLE"
+)
+
+DataQualityDashboard::viewDqDashboard(
+  here::here("dqd_output", "synthea-08312023113733.json")
+  )

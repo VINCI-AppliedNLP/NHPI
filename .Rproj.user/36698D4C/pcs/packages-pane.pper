@@ -1,0 +1,7 @@
+{
+    "installOptions": {
+        "installFromRepository": true,
+        "libraryPath": "/Users/u0807390/Desktop/Projects/NHPI/ClassificationTool/NHPITool/NHPIClassification/renv/library/R-4.2/aarch64-apple-darwin20",
+        "installDependencies": true
+    }
+}
