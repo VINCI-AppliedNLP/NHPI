@@ -1,0 +1,89 @@
+(?i)\b(asian|white)?(,|\s*)?\s*native\s+hawaiian\s+or\s+(other\s*)?pacific\s*islander\b@race_aapi
+(?i)\b(south(-|\s*)east|south|east)?(-|\s*)?asian(-|\s*)?(american)?\b@race_asian
+(?i)\bnative\s*hawaiian/pacific\s*islander@race_pacific_islander
+(?i)\b(asian)?(/|\s*or\s*)?pacific\s*islander@race_aapi
+(?i)\bchinese(-|\s*)(american)?@nationality_asian
+(?i)\bjapanese(-|\s*)(american)?@nationality_asian
+(?i)\bvietnamese(-|\s*)(american)?@nationality_asian
+(?i)\bcambodian(-|\s*)(american)?@nationality_asian
+(?i)\bthai\b(-|\s*)(american)?@nationality_asian
+(?i)\btaiwanese(-|\s*)(american)?@nationality_asian
+(?i)\bphilippino(-|\s*)(american)?@nationality_asian
+(?i)\bfilipino(-|\s*)(american)?@nationality_asian
+(?i)\bindian\b(-|\s*)american@nationality_asian
+(?i)\btongan?\b@race_pacific_islander
+(?i)\bsamoan?\b@race_pacific_islander
+(?i)\bpolynesian?\b@race_pacific_islander
+(?i)\bhawai[ian]*\b@race_pacific_islander
+(?i)\bmaori\b@race_pacific_islander
+(?i)\bautearoa\b@nationality_nhpi
+(?i)\bnew\s*zealand\b@nationality_nhpi
+(?i)(?<!non-va\s)\btahiti(an)?\b@ethnicity_nhpi_polynesian
+(?i)\btokelau\b@nationality_nhpi
+(?i)\bmicronesian\b@nationality_nhpi
+(?i)\bfiji(an)?\b@nationality_nhpi
+(?i)\bniue\b@nationality_nhpi
+(?i)\bcook\s*island(s|er)\b@nationality_nhpi
+(?i)\brotuman?\b@nationality_nhpi
+(?i)\brapa(nui|n)?\b@nationality_nhpi
+(?i)\btuamotu\b@nationality_nhpi
+(?i)\bpalau(an)?\b@nationality_nhpi
+(?i)\btuvalu\b@nationality_nhpi
+(?i)\bkiribati\b@nationality_nhpi
+(?i)\bmarshall\s*islands\b@nationality_nhpi
+(?i)\bmarshallese\b@nationality_nhpi
+(?i)\bbora\s*bora\b@nationality_nhpi
+(?i)\bmariana\s*islands\b@nationality_nhpi
+(?i)\bvanuatu\b@nationality_nhpi
+(?i)\bnew caledona\b@nationality_nhpi
+(?i)\bwallis(ian)?\b@ethnicity_polynesian
+(?i)\buvean?\b@nationality_nhpi
+(?i)\bfutunan?\b@nationality_nhpi
+(?i)\bsoloman\s*islands\b@nationality_nhpi
+(?i)\bpapua\b@nationality_nhpi
+(?i)\bfrench\s*polynesian?\b@nationality_nhpi
+(?i)\btokelauan\b@ethnicity_nhpi_polynesian
+(?i)\btuvaluan\b@ethnicity_nhpi_polynesian
+(?i)\bniuean\b@ethnicity_nhpi_polynesian
+(?i)\btuamotuan\b@ethnicity_nhpi_polynesian
+(?i)\btubuai\b@ethnicity_nhpi_polynesian
+(?i)\bmarquesan\b@ethnicity_nhpi_polynesian
+(?i)\bgambier\s*island(s|er)?\b@ethnicity_nhpi_polynesian
+(?i)(?<!dr.\s|ary\s|ider\s)\bkanak\b@ethnicity_nhpi_melanesian
+(?i)\bkwaio\b@ethnicity_nhpi_melanesian
+(?i)\bmotuan\b@ethnicity_nhpi_melanesian
+(?i)\bni-vanuatu\b@ethnicity_nhpi_melanesian
+(?i)\bbilibil\b@ethnicity_nhpi_melanesian
+(?i)\bmaisin\b@ethnicity_nhpi_melanesian
+(?i)\bmotu\b@ethnicity_nhpi_melanesian
+(?i)\btanga\b@ethnicity_nhpi_melanesian
+(?i)\btolai\b@ethnicity_nhpi_melanesian
+(?i)\btrobriand\b@ethnicity_nhpi_melanesian
+(?i)\bpapuan?\b@ethnicity_nhpi_melanesian
+(?i)\bpapuan?(\s*new\s*guinean)?\b@ethnicity_nhpi_melanesian
+(?i)\bcarolinian?\b@ethnicity_nhpi_micronesian
+(?i)\bchamor(ro|u)\b@ethnicity_nhpi_micronesian
+(?i)\bchuukese\b@ethnicity_nhpi_micronesian
+(?i)\bkosrae(an)?\b@ethnicity_nhpi_micronesian
+(?i)\bpohnpeian\b@ethnicity_nhpi_micronesian
+(?i)\bnauruan?\b@ethnicity_nhpi_micronesian
+(?i)\bnhopi\b@ethnicity_nhpi_nhopi
+(?i)(?<!r.\s|dr\s)\byap\b@ethnicity_nhpi_micronesian
+(?i)\bmicronesia\b@ethnicity_nhpi_melanesian
+(?i)\bhuahine\b@ethnicity_polynesian
+(?i)\baustral\s*islands\b@ethnicity_polynesian
+(?i)\brarotona\b@ethnicity_polynesian
+(?i)\bkanaka maoli\b@ethnicity_polynesian
+(?i)\bmarquesas islands@ethnicity_polynesian
+(?i)\beaster islander\b@ethnicity_polynesian
+(?i)\bpascuan\b@ethnicity_polynesian
+(?i)\bnew caledonian\b@ethnicity_melanesian
+(?i)\bmelanesian?\b@ethnicity_melanesian
+(?i)(?<!bc |nh |al |va )\bguam\b@ethnicity_micronesian
+(?i)\btrukese\b@ethnicity_micronesian
+(?i)\bkaping\b@ethnicity_micronesian
+(?i)\bgilbert islands\b@ethnicity_micronesian
+(?i)\bcaroline islands\b@ethnicity_micronesian
+(?i)\btarawa\b@ethnicity_micronesian
+(?i)\bratak chain\b@ethnicity_micronesian
+(?i)\bralik chain\b@ethnicity_micronesian

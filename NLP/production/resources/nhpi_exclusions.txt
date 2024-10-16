@@ -1,0 +1,7 @@
+(?i)\b(nh\s+|va\s+|cboc\s+)guam@facility name
+(?i)\bnaval hospital guam @facility name
+(?i)\bguam naval hospital@facility name
+(?i)\bcboc american samoa@facility name
+(?i)\b(american\s+|amer\s+|am\.\s+|am\s+)?samoa cboc@facility name
+(?i)\bhawaiian time@irrelevant concept
+(?i)\bhawaiian standard time@irrelevant concept
